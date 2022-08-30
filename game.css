@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+}
+
+body {
+    color: white;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: .6rem;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+    font-size: 2.5rem;
+    min-width: 55rem;
+    min-height: 5rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+
+.choice-prefix {
+    padding: 2rem 2rem;
+    color: black;
+}
+
+.choice-prefix:hover {
+    padding: 2rem 2rem;
+    color: white;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+    color: black;
+}
+
+.choice-text:hover {
+    padding: 2rem;
+    width: 100%;
+    color: white;
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+   text-align: center; 
+}
+
+#score {
+    font-size: 7rem;
+}
+
+#progressText {
+    font-size: 4rem;
+}
+
+#timer {
+    background-color: white;
+    color: black;
+    font-size: 6rem;
+    width: 50vw;
+    max-width: 80rem;
+    height: 69px;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    min-width: 55rem;
+    min-height: 5rem;
+}
+
+#timer-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 35rem;
+    }
+}

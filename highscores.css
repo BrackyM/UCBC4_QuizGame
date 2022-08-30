@@ -1,0 +1,25 @@
+
+
+
+body {
+    color: white;
+}
+
+#highScoresLIst {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.high-score {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+ul {
+    color: white;
+}
+
+li {
+    color: white;
+}
