@@ -16,10 +16,18 @@ let questions = [
         choice2: '2',
         choice3: '3',
         choice4: '4',
-        answer: 3,
+        answer: 1,
     },
     {
-        question: 'What is question 1?',
+        question: 'What is question 2?',
+        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
+        answer: 2,
+    },
+    {
+        question: 'What is question 3?',
         choice1: '1',
         choice2: '2',
         choice3: '3',
@@ -27,28 +35,20 @@ let questions = [
         answer: 3,
     },
     {
-        question: 'What is question 1?',
+        question: 'What is question 4?',
         choice1: '1',
         choice2: '2',
         choice3: '3',
         choice4: '4',
-        answer: 3,
+        answer: 4,
     },
     {
-        question: 'What is question 1?',
+        question: 'What is question 5?',
         choice1: '1',
         choice2: '2',
         choice3: '3',
-        choice4: '4',
-        answer: 3,
-    },
-    {
-        question: 'What is question 1?',
-        choice1: '1',
-        choice2: '2',
-        choice3: '3',
-        choice4: '4',
-        answer: 3,
+        choice4: '5',
+        answer: 5,
     }
 ]
 
@@ -70,14 +70,17 @@ getNewQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
     
+    var questionTitle = document.getElementById("question-title")
+    
+    questionTitle.textContent = currentQuestion.question;
    
-    questions.innerText = currentQuestion.question
+    //questions.innerText = currentQuestion.question
     
     
-    choices.forEach(choice => {
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
-    })
+   // choices.forEach(choice => {
+   //     const number = choice.dataset['number']
+   //     choice.innerText = currentQuestion['choice' + number]
+   // })
     
     availableQuestions.splice(questionsIndex, 1)
     acceptingAnswers = true
