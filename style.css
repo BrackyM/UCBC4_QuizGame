@@ -1,108 +1,107 @@
 :root {
-    background-color: black;
+  background-color: black;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
 }
 
 h1 {
-    font-size: 5rem;
-    color: white;
-    margin-bottom: 5rem;
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 5rem;
 }
-
-
 
 h2 {
-    font-size: 4rem;
-    margin-bottom: 4rem;
+  font-size: 4rem;
+  margin-bottom: 4rem;
 }
 
+/* Main Page */
 .container {
-    width: 50vw;
-    height: 42vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 1rem;
+  width: 50vw;
+  height: 42vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
+/* Flex stylings used as a class to make them easier to call */
 .flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-center {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .btn {
-    font-size: 2.5rem;
-    padding: 2rem 0;
-    width: 28rem;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    color: black;
-    background-color: white;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  width: 28rem;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  color: black;
+  background-color: white;
 }
 
 .btn:hover {
-    cursor: pointer;
-    border-style: solid;
-    border-color: white;
-    background-color: black;
-    color: white;
+  cursor: pointer;
+  border-style: solid;
+  border-color: white;
+  background-color: black;
+  color: white;
 }
 
 .btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 /* Save Score*/
 
 .end-form-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
 }
 
 input {
-    margin-bottom: .8rem;
-    width: 100%;
-    border: none;
-    padding: 1rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border: none;
+  padding: 1rem;
 }
 
 #username {
-    margin-bottom: 2rem;
-    width: 100%;
-    outline: none;
+  margin-bottom: 2rem;
+  width: 100%;
+  outline: none;
 }
 
 #end-text {
-    font-size: 3rem;
+  font-size: 3rem;
 }
-
